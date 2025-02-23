@@ -1,0 +1,10 @@
+
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore log files
+*.log

@@ -1,0 +1,92 @@
+.form-head {
+	margin: 0;
+	font-size: 1.8em;
+}
+
+.login-form-container {
+	background: #ffffff;
+	margin: 100px auto;
+	border-radius: 16px;
+	padding: 30px;
+	width: 325px;
+	border: #e5e6e9 1px solid;
+	text-align: center;
+}
+
+.login-form-container label {
+	margin-bottom: 5px;
+	display: inline-block;
+}
+
+.login-form-container .field-column {
+	padding: 30px 10px 0px 10px;
+	text-align: left;
+}
+
+.demo-input-box {
+	padding: 8px;
+	border: #CCC 1px solid;
+	border-radius: 16px;
+	width: 100%;
+}
+
+.btnLogin {
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 16px;
+	width: 100%;
+	border: 0px;
+	transition: 0.5s;
+	background-size: 200% auto;
+	background-image: linear-gradient(to right, #326bfa 0%, #40f5d7 51%, #2f61ff 100%);
+	margin: 0px 0px 5px 0px;
+}
+
+.btnLogin:hover {
+	background-position: right center;
+}
+
+.error-info {
+	color: #FF0000;
+	margin-left: 10px;
+}
+
+.error-message {
+	padding: 7px 10px;
+	background: #fff1f2;
+	border: #ffd5da 1px solid;
+	color: #d6001c;
+	border-radius: 4px;
+	margin: 30px 10px 10px 10px;
+}
+
+.form-link {
+	color: #1400f3;
+	text-decoration: none;
+}
+
+.btn.form-link {
+	border: #232323 1px solid;
+	color: #232323;
+	border-radius: 15px;
+	padding: 5px 20px;
+}
+
+.login-row {
+	margin: 60px 0px 0px;
+}
+
+.signup-icon {
+	max-width: 30px;
+	margin: 5px;
+}
+
+@media screen and (max-width:440px) {
+	.login-form-container {
+		width: auto;
+		padding: 20px;
+	}
+	.login-form-container .field-column {
+		padding: 20px 10px 0px 10px;
+	}
+}

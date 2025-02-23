@@ -1,0 +1,54 @@
+/* Background image and overlay */
+body.bg-image {
+    background-image: url('/background.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Overlay to improve readability */
+body.bg-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+
+/* Ensure content is above the overlay */
+header, main, footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Adjust text color for better contrast */
+header h1, h2, .text-white {
+    color: white !important;
+}
+
+/* Card and table styling */
+.card {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border: none;
+    border-radius: 10px;
+}
+
+.table {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+}
+
+/* Navbar styling */
+.navbar {
+    background: rgba(255, 255, 255, 0.9) !important; /* Semi-transparent white */
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    background: rgba(0, 0, 0, 0.7) !important; /* Semi-transparent black */
+}
